@@ -1,20 +1,14 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
   globals: {
     analytics: 'readonly',
     konnect: 'readonly'
   },
-  extends: [
-    'plugin:vue/recommended',
-    '@vue/standard',
-    '@vue/typescript'
-  ],
-  plugins: [
-    "only-warn"
-  ],
+  extends: ['plugin:vue/recommended', '@vue/standard', '@vue/typescript'],
+  plugins: ['only-warn'],
   rules: {
     'arrow-parens': 'off',
     'generator-star-spacing': 'off',
@@ -61,14 +55,15 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     '@typescript-eslint/no-unused-vars': 'error',
     'vue/custom-event-name-casing': 'off',
-    'no-trailing-spaces': 'error'
+    'no-trailing-spaces': 'error',
+    'vue/html-self-closing': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'space-before-function-paren': 'off',
+    'vue/attribute-hyphenation': 'off'
   },
   overrides: [
     {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)'
-      ],
+      files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
       env: {
         mocha: true
       }

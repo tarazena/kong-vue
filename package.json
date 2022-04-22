@@ -11,7 +11,13 @@
     "server": "json-server --watch db/index.js --routes db/routes.json --port 4001"
   },
   "dependencies": {
+    "@kongponents/kbadge": "^6.24.11",
+    "@kongponents/kbutton": "^6.25.1",
     "@kongponents/kcard": "^1.0.0",
+    "@kongponents/kicon": "^6.25.1",
+    "@kongponents/kinput": "^6.25.0",
+    "@kongponents/kpagination": "^6.25.1",
+    "@kongponents/styles": "^6.25.1",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "eslint-plugin-only-warn": "^1.0.2",
@@ -53,10 +59,10 @@
     "chai": "^4.1.2"
   },
   "engines": {
-    "node": ">=10.15.1 <=12.6.0",
+    "node": "16",
     "npm": ">=5.0.0"
   },
   "volta": {
-    "node": "12.6.0"
+    "node": "16"
   }
 }
